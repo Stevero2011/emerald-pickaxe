@@ -41,7 +41,11 @@ public class ExampleMod implements ModInitializer {
 		Registry.register(
 			BuiltInRegistries.ITEM,
 			id("emerald_pickaxe"),
-			new EmeraldPickaxeItem(new Item.Properties().pickaxe(EMERALD_TOOL_MATERIAL, 1.0F, -2.8F))
+			new EmeraldPickaxeItem(
+				new Item.Properties()
+					.setId(net.minecraft.resources.ResourceKey.create(net.minecraft.core.registries.Registries.ITEM, id("emerald_pickaxe")))
+					.pickaxe(EMERALD_TOOL_MATERIAL, 1.0F, -2.8F)
+			)
 		);
 	}
 
