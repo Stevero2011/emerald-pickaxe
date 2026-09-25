@@ -40,3 +40,4 @@ replay_*.log
 *.jfr
 mc-src
 mc-src/
+venv/
